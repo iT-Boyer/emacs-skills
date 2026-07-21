@@ -37,7 +37,7 @@ set output "/tmp/agent-plot-XXXX.png"
 
 FG = "#eeffff"  # from emacsclient query
 set border lc rgb FG
-set key textcolor rgb FG
+set key textcolor rgb FG noopaque nobox  # transparent: Emacs bg shows through, FG text stays legible
 set xlabel textcolor rgb FG
 set ylabel textcolor rgb FG
 set title textcolor rgb FG
@@ -56,5 +56,7 @@ set ytics textcolor rgb FG
 - After gnuplot runs successfully, output a markdown image (`![description](path)`) on its own line.
 - Choose an appropriate plot type for the data (lines, bars, histogram, scatter, etc.).
 - Include a title, axis labels, and a legend when they add clarity.
+- Keep the legend transparent (`noopaque`, no box) so the Emacs background shows through and the FG-colored text stays legible. Never make the key `opaque`: on a transparent terminal it fills the key box with an opaque (often white) background, which hides the light FG text. If the legend would overlap dense or filled data, move it to an empty corner or use `set key outside` rather than making it opaque.
+- Keep plot fills semi-transparent (e.g. `fs transparent solid 0.15`) so any legend or labels drawn over them remain readable against the Emacs background.
 - Use `enhanced` text mode for subscripts/superscripts when needed.
 - If no plottable data exists in the recent context, inform the user.

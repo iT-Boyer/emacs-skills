@@ -19,6 +19,7 @@
         "./skills/dired",
         "./skills/emacsclient",
         "./skills/file-links",
+        "./skills/github-activity",
         "./skills/gnuplot",
         "./skills/highlight",
         "./skills/mappu",
