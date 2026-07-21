@@ -39,6 +39,10 @@ Plot data from the current context using gnuplot. Queries the Emacs foreground c
 
 Plot data from the current context using matplotlib (via `uv run`). Queries the Emacs foreground color and generates a transparent PNG that renders inline. No permanent install needed — uses `uv` to run matplotlib on the fly.
 
+### /github-activity
+
+Analyze a GitHub project's recent activity (PRs and issues) and produce a succinct, chart-backed health report — throughput, backlog burn-rate, and responsiveness. Renders matplotlib charts inline.
+
 ### /plantuml
 
 Create diagrams from the current context using PlantUML. Applies the Emacs foreground color via `skinparam` for readable text on your Emacs background.

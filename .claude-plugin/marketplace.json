@@ -15,6 +15,7 @@
       "source": "./",
       "strict": false,
       "skills": [
+        "./skills/d2",
         "./skills/describe",
         "./skills/dired",
         "./skills/emacsclient",
@@ -23,8 +24,16 @@
         "./skills/gnuplot",
         "./skills/highlight",
         "./skills/mappu",
+        "./skills/matplotlib",
+        "./skills/mermaid",
         "./skills/open",
-        "./skills/select"
+        "./skills/plantuml",
+        "./skills/select",
+        "./skills/swiftui-preview",
+        "./skills/xcode-build-device",
+        "./skills/xcode-build-simulator",
+        "./skills/xcode-run-device",
+        "./skills/xcode-run-simulator"
       ]
     }
   ]
